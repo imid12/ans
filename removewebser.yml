@@ -1,6 +1,6 @@
 ---
 - name: Enable intranet services
-  hosts: dimaah1
+  hosts: all
   become: yes
   tasks:
     - name: firewalld remove access to httpd service
