@@ -1,6 +1,6 @@
 ---
 - name: Enable intranet services
-  hosts: all
+  hosts: dimaah1
   become: yes
   tasks:
     - name: latest version of httpd and firewalld installed
@@ -47,6 +47,6 @@
   tasks:
     - name: connect to intranet web server
       uri:
-        url: http://dimaah.com
+        url: http://haamidmanagement.com
         return_content: yes
         status_code: 200 
